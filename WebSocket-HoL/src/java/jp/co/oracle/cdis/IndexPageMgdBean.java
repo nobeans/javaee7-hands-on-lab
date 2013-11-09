@@ -13,14 +13,30 @@ import javax.enterprise.context.RequestScoped;
  *
  * @author ynak
  */
-@Named(value = "indexPageMgdBean")
+@Named(value = "indexManage")
 @RequestScoped
 public class IndexPageMgdBean {
 
+    private String message;
+    
     /**
      * Creates a new instance of IndexPageMgdBean
      */
     public IndexPageMgdBean() {
+    }
+
+    /**
+     * @return the message
+     */
+    public String getMessage() {
+        return message;
+    }
+
+    /**
+     * @param message the message to set
+     */
+    public void setMessage(String message) {
+        this.message = message;
     }
     
 }
