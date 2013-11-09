@@ -38,5 +38,9 @@ public class IndexPageMgdBean {
     public void setMessage(String message) {
         this.message = message;
     }
-    
+ 
+    public String pushSendButton() {
+        System.out.println(getMessage());
+        return "";
+    }
 }
